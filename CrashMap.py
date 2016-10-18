@@ -11,11 +11,11 @@ manhattan_y = (-10, 10)
 
 #Assume dataset is in form [(x_0, y_0), ..., (x_n, y_n)] where x, y is gps coordinates
 def CrashMap(dataset, stdx, stdy):
-        new_dataset = copy.deepcopy(dataset)
+	new_dataset = copy.deepcopy(dataset)
 	def freqMap(x, y):
 		z = 0.0
 		C = 1.0 # Normalization constant. Definitely needs to be tweeked
-		        # Should just be able to divide in the end.
+		# Should just be able to divide in the end.
 		for x_i,y_i in new_dataset:
 			dx = (x - x_i)
 			dy = (y - y_i)
